@@ -1,0 +1,46 @@
+#image-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#image-list li {
+    margin: 10px 20px 10px 0px;
+    float: left;
+}
+#image-list li img{
+    width: 250px;
+    height: 155px;
+}
+
+#image-container{
+    margin-bottom: 14px;
+    overflow: auto;
+}
+
+#txtresponse
+{
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: none;
+    border :#E0E0E0 1px solid;
+    color:#212121;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+
+input#submit {
+    padding: 10px 30px !important;
+    background: #333 !important;
+    border: #E0E0E0 1px solid;
+    color: #FFF !important;
+    font-size: 0.9em;
+    border-radius: 0px;
+    cursor:pointer;
+    clear:both;
+}
+
+.ui-sortable-placeholder {
+    border :#E0E0E0 1px solid !important;
+}

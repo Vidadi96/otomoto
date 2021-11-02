@@ -1,0 +1,244 @@
+.salon_container{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #8a928e4d;
+  overflow: hidden;
+  background: #fafafa;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.salon_container:hover{
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: 0px 4px 8px #585e5b;
+}
+.salon_container img{
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.resmi{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  background-color: #3b8bf2;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 3px 5px;
+  line-height: 14px;
+}
+.right_side{
+  position: relative;
+  float: left;
+  width: calc(100% - 160px);
+  padding: 10px 0px;
+}
+.salon_line{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 5px 15px;
+}
+.salon_name{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.salon_mobile{
+  font-size: 14px;
+  color: #9b9b9b;
+}
+.salon_mobile i{
+  position: relative;
+  float: left;
+  color: #2196f3;
+  font-size: 16px;
+  margin: 2px 5px 0px 0px;
+}
+.salon_description{
+  font-size: 13px;
+  max-height: 46px;
+  overflow: hidden;
+  text-align: left;
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.salon_car_count{
+  font-size: 13px;
+  color: #2196f3;
+}
+.my_container{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+}
+.autosalon_type{
+  position: relative;
+  float: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .salon_name{
+    font-size: 19px;
+    height: 32px;
+  }
+  .salon_mobile {
+    font-size: 13px;
+  }
+  .salon_mobile i{
+    margin: 1px 6px 0px 0px;
+  }
+  .salon_car_count {
+    font-size: 12px;
+  }
+  .salon_container img{
+    width: 140px;
+    height: 140px;
+  }
+  .resmi{
+    left: 80px;
+  }
+  .salon_container{
+    height: 140px;
+  }
+  .salon_line{
+    padding: 3px 15px;
+  }
+  .salon_description{
+    max-height: 44px;
+  }
+  .right_side{
+    width: calc(100% - 140px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .salon_name {
+    font-size: 19px;
+    height: 28px;
+  }
+  .salon_container img {
+    width: 120px;
+    height: 120px;
+  }
+  .resmi{
+    left: 60px;
+  }
+  .right_side{
+    width: calc(100% - 120px);
+    padding: 0px;
+  }
+  .salon_container {
+    height: 120px;
+  }
+  .salon_line {
+    padding: 2px 15px;
+  }
+  .salon_mobile {
+    font-size: 12px;
+  }
+  .salon_mobile i {
+    margin: 2px 6px 0px 0px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .salon_container {
+    height: 100px;
+  }
+  .salon_container img {
+    width: 100px;
+    height: 100px;
+  }
+  .resmi{
+    top: 5px;
+    left: 50px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .right_side{
+    width: calc(100% - 100px);
+  }
+  .salon_name{
+    font-size: 17px;
+    height: 24px;
+  }
+  .salon_description {
+    font-size: 12px;
+    line-height: 14px;
+    max-height: 34px;
+    padding: 4px 15px;
+  }
+  .salon_mobile {
+    font-size: 11px;
+  }
+  .salon_mobile i {
+    margin: 1px 5px 0px 0px;
+    font-size: 14px;
+  }
+  .salon_car_count {
+    font-size: 11px;
+  }
+  .salon_container{
+    margin: 5px 0px;
+  }
+  .my_container{
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .my_container {
+    width: calc(100% + 30px);
+    left: -15px;
+  }
+  .salon_container {
+    height: 80px;
+  }
+  .salon_container img {
+    width: 80px;
+    height: 80px;
+  }
+  .resmi{
+    left: 30px;
+  }
+  .right_side{
+    width: calc(100% - 80px);
+  }
+  .salon_name {
+    font-size: 15px;
+    height: 20px;
+  }
+  .salon_line {
+    padding: 2px 10px;
+  }
+  .salon_description {
+      font-size: 11px;
+      line-height: 13px;
+      max-height: 30px;
+      padding: 4px 10px;
+  }
+  .salon_mobile {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .salon_mobile i {
+    font-size: 13px;
+    line-height: 9px;
+  }
+  .salon_car_count {
+    font-size: 10px;
+    line-height: 9px;
+  }
+}

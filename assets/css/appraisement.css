@@ -1,0 +1,240 @@
+body{
+  min-height: inherit !important;
+}
+.my_container{
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: calc(100% - 293px);
+}
+.mark_select_block, .model_select_block, .year_select_block{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.model_select_block, .year_select_block{
+  margin-top: 10px;
+  display: none;
+}
+.select_title{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px 0px 20px 0px;
+}
+.appraisement_search_input{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.appraisement_mark_block{
+  position: relative;
+  float: left;
+  width: 16.6%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 3px;
+}
+.appraisement_mark_block:hover, .appraisement_model_block:hover, .appraisement_year_block:hover{
+  background: #deeff9;
+}
+.appraisement_model_block, .appraisement_year_block{
+  position: relative;
+  float: left;
+  width: 16.6%;
+  padding: 7px 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.appraisement_mark_block img{
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  opacity: 0.5;
+  object-fit: contain;
+}
+.appraisement_mark_block:hover img{
+  opacity: 1;
+}
+.appraisement_mark_block span{
+  position: relative;
+  float: left;
+  width: calc(100% - 30px);
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.appraisement_selected_block{
+  position: relative;
+  float: left;
+  width: 100%;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0000001a;
+  margin-bottom: 5px;
+  display: none;
+}
+.calculate_button{
+  position: relative;
+  margin: 20px 0px 10px 0px;
+  display: none;
+}
+.selected_title{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+}
+.selected_content{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.for_model_block, .for_year_block{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.appraisement_result{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  display: none;
+}
+.appraisement_result .result_title{
+  position: relative;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+.appraisement_result .result_content{
+  position: relative;
+  float: left;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/*----- LOADER -----*/
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 5px;
+  top: 10px;
+}
+.lds-spinner div {
+  transform-origin: 20px 20px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 18.5px;
+  width: 2px;
+  height: 7px;
+  border-radius: 20%;
+  background: #7d7d7d;
+}
+.lds-spinner-white div:after {
+  background: #ffffff !important;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .appraisement_mark_block, .appraisement_model_block, .appraisement_year_block{
+    width: 25%;
+  }
+  .my_container{
+    min-height: calc(100% - 380px);
+  }
+  body{
+    margin-bottom: 66px !important;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .appraisement_mark_block, .appraisement_model_block, .appraisement_year_block{
+    width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .appraisement_mark_block, .appraisement_model_block, .appraisement_year_block{
+    width: 50%;
+  }
+}

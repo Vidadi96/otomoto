@@ -1,0 +1,504 @@
+.main_button{
+  margin: 20px 0px;
+  padding: 5px 20px;
+  background-color: #c51e2b;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  outline: none;
+}
+.class_select{
+  font-size: 16px;
+  padding: 5px;
+  line-height: 30px;
+  height: 32px;
+  border: none;
+}
+.main_button:focus{
+  outline-color: #f5c5c5;
+}
+.form-check{
+  height: 30px;
+}
+.form-check-input{
+  width: 16px;
+  height: 16px;
+  top: -2px;
+  position: absolute;
+}
+.page_title, .not_main_title{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 0px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 5px;
+}
+.not_main_title{
+  border: none;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.filter_title{
+  position: relative;
+  float: left;
+  font-size: 15px;
+}
+.filter_line{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.filter_mini_input{
+  font-size: 15px;
+  height: 30px;
+  padding: 0px 5px;
+}
+.filter_mini_select{
+  position: absolute;
+  right: 0px;
+  height: 30px;
+  font-size: 15px;
+  width: 100px;
+  top: -5px;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle{
+  height: 32px !important;
+}
+.bootstrap-select .dropdown-toggle .filter-option{
+  padding: 5px 10px !important;
+  font-size: 15px;
+}
+.bootstrap-select .dropdown-menu li a{
+  font-size: 14px;
+}
+table{
+  width: calc(100% - 30px);
+  margin-left: 15px;
+}
+.span_td{
+  padding-left: 5px;
+}
+.form-check-label{
+  position: relative;
+  font-size: 16px;
+  padding-left: 5px;
+  top: -1px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.my_container{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+input[name="min_mileage"]::-webkit-input-placeholder, input[name="max_mileage"]::-webkit-input-placeholder,
+input[name="min_price"]::-webkit-input-placeholder, input[name="max_price"]::-webkit-input-placeholder,
+input[name="min_year"]::-webkit-input-placeholder, input[name="max_year"]::-webkit-input-placeholder {
+  color: transparent;
+}
+input[name="min_mileage"]:-moz-placeholder, input[name="max_mileage"]:-moz-placeholder,
+input[name="min_price"]:-moz-placeholder, input[name="max_price"]:-moz-placeholder,
+input[name="min_year"]:-moz-placeholder, input[name="max_year"]:-moz-placeholder {
+  color: transparent;
+}
+input[name="min_mileage"]::-moz-placeholder, input[name="max_mileage"]::-moz-placeholder,
+input[name="min_price"]::-moz-placeholder, input[name="max_price"]::-moz-placeholder,
+input[name="min_year"]::-moz-placeholder, input[name="max_year"]::-moz-placeholder {
+  color: transparent;
+}
+input[name="min_mileage"]:-ms-input-placeholder, input[name="max_mileage"]:-ms-input-placeholder,
+input[name="min_price"]:-ms-input-placeholder, input[name="max_price"]:-ms-input-placeholder,
+input[name="min_year"]:-ms-input-placeholder, input[name="max_year"]:-ms-input-placeholder {
+  color: transparent;
+}
+input[name="min_mileage"]::placeholder, input[name="max_mileage"]::placeholder,
+input[name="min_price"]::placeholder, input[name="max_price"]::placeholder,
+input[name="min_year"]::placeholder, input[name="max_year"]::placeholder {
+  color: transparent;
+}
+.firefox_row{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.dropdown{
+  background: none;
+}
+.btn-light{
+  background: #ffffff;
+}
+.mobile_open{
+  display: none;
+}
+.for_filter_button{
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+}
+.filter_button{
+  width: 100%;
+  max-width: 330px;
+  font-size: 14px;
+  height: 33px;
+  padding: 0px 25px 0px 5px;
+  overflow: hidden;
+}
+.filter_button:hover{
+  overflow: overlay;
+}
+.null_button{
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #dc3545;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  cursor: pointer;
+  display: none;
+}
+.null_button i{
+  color: #fff;
+}
+.all_marks_window, .all_models_window, .all_classes_window{
+  position: absolute;
+  float: right;
+  width: 0px;
+  right: 0px;
+  background: #ffffff;
+  height: calc(100% + 110px);
+  top: -110px;
+  z-index: 10000;
+  overflow: hidden;
+}
+.marks_mini_head{
+  position: relative;
+  float: left;
+  padding: 10px;
+  background: #dc3545;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mark_back, .mark_back:hover, .mark_back:active
+,.class_back, .class_back:hover, .class_back:active
+,.model_back, .model_back:hover, .model_back:active{
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: #ffffff;
+  font-size: 17px;
+}
+.mark_back i, .model_back i, .class_back i{
+  color: #ffffff;
+}
+.mark_head_title{
+  position: relative;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.mark_search_div{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.mark_search_div i{
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  left: 20px;
+  color: #dc3545;
+}
+.mark_search, .model_search{
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 10px 5px 35px !important;
+}
+.mark_big_title{
+  position: relative;
+  float: left;
+  font-size: 22px;
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+}
+.mark_row, .model_row, .class_row{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.popular_mark_block, .popular_model_block, .class_block2{
+  position: relative;
+  float: left;
+  width: calc(50% - 10px);
+  margin: 0px 10px 5px 0px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(85, 85, 85, .5);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.popular_mark_block img, .class_block2 img{
+  position: relative;
+  width: 40px;
+  margin: 0px 5px 0px 15px;
+}
+.popular_mark_block_content, .class_block_content{
+  position: relative;
+  float: left;
+  width: calc(100% - 60px);
+  padding: 10px 0px;
+}
+.popular_mark_block_content, .class_block_content{
+  position: relative;
+  float: left;
+  width: calc(100% - 60px);
+  padding: 10px 0px;
+}
+.popular_model_block_content, .popular_model_block_content2{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px 0px;
+}
+.popular_model_block_content span:first-child, .popular_model_block_content2 span:first-child{
+  position: relative;
+  float: left;
+  color: #000;
+  font-size: 16px;
+  padding-left: 10px;
+  width: calc(100% - 26px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.popular_mark_block_content span:first-child, .class_block_content span:first-child{
+  position: relative;
+  float: left;
+  color: #000;
+  font-size: 16px;
+  width: 100%;
+  padding: 2px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.popular_model_block_content span:last-child, .popular_model_block_content2 span:last-child{
+  position: relative;
+  float: right;
+  color: #a5a5a5;
+  font-size: 12px;
+  padding: 2px 5px 2px 0px;
+  font-weight: 600;
+}
+.popular_mark_block_content span:last-child, .class_block_content span:last-child{
+  position: relative;
+  float: left;
+  color: #a5a5a5;
+  font-size: 12px;
+  width: 100%;
+  padding: 2px 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.popular_mark{
+  background: #dc3545;
+}
+.popular_mark .popular_mark_block_content span:first-child{
+  color: #ffffff;
+}
+.popular_mark .popular_mark_block_content span:last-child{
+  color: #ffd7db;
+}
+.open_subs{
+  position: relative;
+  float: left;
+  font-size: 20px;
+  color: #dc3545;
+  cursor: pointer;
+  margin: 4px 0px 0px 15px;
+}
+.not_main_title span{
+  position: relative;
+  float: left;
+}
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+  border: none;
+}
+.bootstrap-select .dropdown-menu {
+  max-height: 180px !important;
+  right: 0px !important;
+}
+.dropdown-menu{
+  overflow-x: hidden;
+}
+.select_style{
+  font-size: 14px;
+  padding: 0px 5px;
+}
+
+/*----- LOADER -----*/
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 5px;
+  top: 10px;
+}
+.lds-spinner div {
+  transform-origin: 20px 20px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 18.5px;
+  width: 2px;
+  height: 7px;
+  border-radius: 20%;
+  background: #7d7d7d;
+}
+.lds-spinner-white div:after {
+  background: #ffffff !important;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .my_container{
+    left: -15px;
+    width: calc(100% + 30px);
+  }
+  .form-check-label{
+    font-size: 15px;
+    padding-top: 1px;
+    padding-left: 3px;
+  }
+  input[name="min_mileage"]::-webkit-input-placeholder, input[name="max_mileage"]::-webkit-input-placeholder,
+  input[name="min_price"]::-webkit-input-placeholder, input[name="max_price"]::-webkit-input-placeholder,
+  input[name="min_year"]::-webkit-input-placeholder, input[name="max_year"]::-webkit-input-placeholder {
+    color: #bbb;
+  }
+  input[name="min_mileage"]:-moz-placeholder, input[name="max_mileage"]:-moz-placeholder,
+  input[name="min_price"]:-moz-placeholder, input[name="max_price"]:-moz-placeholder,
+  input[name="min_year"]:-moz-placeholder, input[name="max_year"]:-moz-placeholder {
+    color: #bbb;
+  }
+  input[name="min_mileage"]::-moz-placeholder, input[name="max_mileage"]::-moz-placeholder,
+  input[name="min_price"]::-moz-placeholder, input[name="max_price"]::-moz-placeholder,
+  input[name="min_year"]::-moz-placeholder, input[name="max_year"]::-moz-placeholder {
+    color: #bbb;
+  }
+  input[name="min_mileage"]:-ms-input-placeholder, input[name="max_mileage"]:-ms-input-placeholder,
+  input[name="min_price"]:-ms-input-placeholder, input[name="max_price"]:-ms-input-placeholder,
+  input[name="min_year"]:-ms-input-placeholder, input[name="max_year"]:-ms-input-placeholder {
+    color: #bbb;
+  }
+  input[name="min_mileage"]::placeholder, input[name="max_mileage"]::placeholder,
+  input[name="min_price"]::placeholder, input[name="max_price"]::placeholder,
+  input[name="min_year"]::placeholder, input[name="max_year"]::placeholder {
+    color: #bbb;
+  }
+  .mobile_none{
+    display: none;
+  }
+  .filter_mini_select{
+    right: -12px;
+    font-size: 13px;
+    width: 45px;
+    padding: 0px 2px;
+  }
+  .mobile_open{
+    display: block;
+  }
+  .not_main_title{
+    font-size: 20px;
+  }
+  .filter_title{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .popular_mark_block img, .class_block2 img {
+    width: 30px;
+    margin: 0px 0px 0px 10px;
+  }
+}
